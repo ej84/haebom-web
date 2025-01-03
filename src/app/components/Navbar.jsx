@@ -16,7 +16,7 @@ const Navbar = () => {
           className="w-14 h-14 md:w-20 md:h-20 bg-white rounded-xl"
         />
       </Link>
-      <Link href="/about" className="mt-5 text-xs md:text-lg text-pink">
+      <Link href="/about" className="mt-5 text-xs md:text-lg">
         Who's 해봄?
       </Link>
       <Link href="/shorts" className="mt-5 text-xs md:text-lg">
