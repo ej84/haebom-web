@@ -4,26 +4,47 @@ import React from "react";
 import { FaYoutubeSquare, FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import haebomImg from "../image/haebom.webp";
-import lineImg from "../image/line.webp";
+import lineImg from "../image/line.png";
 
 const Navbar = () => {
   return (
     <nav className="flex flex-row px-3 py-4 justify-around">
-      <Link href="https://ch.sooplive.co.kr/haebomhaebom">
+      <Link href="/">
         <Image
           src={haebomImg}
           alt="haebom Profile"
-          className="w-14 h-14 md:w-20 md:h-20 bg-white rounded-xl"
+          className="w-14 h-14 md:w-24 md:h-24 md:mt-2 bg-white rounded-xl"
         />
       </Link>
-      <Link href="/about" className="mt-5 text-xs md:text-lg">
-        Who's 해봄?
+      <Link href="/about" className="text-xs md:text-lg">
+        <Image
+          src={lineImg}
+          alt="about haebom"
+          className="w-14 h-14 md:w-28 md:h-28 rounded-xl"
+        />
+        <p className="relative bottom-10 md:bottom-[78px] md:right-1">
+          Who is 해봄?
+        </p>
       </Link>
-      <Link href="/shorts" className="mt-5 text-xs md:text-lg">
-        공주의 규칙 챌린지
+      <Link href="/shorts" className="text-xs md:text-lg">
+        <Image
+          src={lineImg}
+          alt="princess rule challenges"
+          className="w-14 h-14 md:w-28 md:h-28 rounded-xl"
+        />
+        <p className="relative bottom-10 md:bottom-[75px] md:right-4">
+          공주의 규칙 챌린지
+        </p>
       </Link>
-      <Link href="/shorts2" className="mt-5 text-xs md:text-lg">
-        해봄 인기송 모음집
+      <Link href="/shorts2" className="text-xs md:text-lg">
+        <Image
+          src={lineImg}
+          alt="haebom's other songs"
+          className="w-14 h-14 md:w-28 md:h-28 rounded-xl"
+        />
+        <p className="relative bottom-10 md:bottom-[75px] md:right-7">
+          해봄의 다른 인기곡들
+        </p>
       </Link>
       {/*<Link
         href="https://www.youtube.com/channel/UCL9oC0YZRwuyudZqUrgKw9w"

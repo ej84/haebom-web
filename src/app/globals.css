@@ -22,7 +22,7 @@ body {
 }
 
 .bg-line {
-  background-image: url("./image/line.webp");
+  background-image: url("./image/line.png");
   background-position: center;
   background-size: cover;
 }
