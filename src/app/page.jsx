@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
       <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
         <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-0 sm:top-0 sm:h-full sm:mb-0 -z-10">
@@ -20,7 +19,7 @@ export default function Home() {
         </div>
 
         {/* 메인 콘텐츠 */}
-        <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-lg text-center w-[90%] sm:w-auto">
+        <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-2xl shadow-pink-700 text-center w-[90%] sm:w-auto">
           <div className="mb-4">
             <div className="flex justify-center">
               <Image
