@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col items-center sm:items-start">
+      <main className="min-h-screen p-8 pb-20 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col items-center sm:items-start">
         <div className="p-4 md:p-8 mx-auto">
           <h1 className="text-xl lg:text-3xl text-center mb-14 lg:mb-24">
             노래하는 해봄 인기송들
@@ -23,7 +23,7 @@ const page = () => {
             </div>
             <div className="flex justify-center">
               <iframe
-                src="https://www.youtube.com/embed/eR2BCzmj_lg"
+                src="https://www.youtube.com/embed/TQnsshOXenQ"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -32,7 +32,7 @@ const page = () => {
             </div>
             <div className="flex justify-center">
               <iframe
-                src="https://www.youtube.com/embed/ihWFX7iJq_A"
+                src="https://www.youtube.com/embed/y_5jyi3woQ4"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -41,7 +41,7 @@ const page = () => {
             </div>
             <div className="flex justify-center">
               <iframe
-                src="https://www.youtube.com/embed/PXUkoHROohI"
+                src="https://www.youtube.com/embed/kVFUfcvQ-o0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

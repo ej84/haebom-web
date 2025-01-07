@@ -4,7 +4,7 @@ import Link from "next/link";
 import crownImg from "./image/crown.webp";
 import haebom_princessImg from "./image/haebom_princess.png";
 import princessImg from "./image/princess.png";
-import princess2Img from "./image/princess2.png"
+import princess2Img from "./image/princess2.png";
 
 export default function Home() {
   return (
@@ -24,11 +24,16 @@ export default function Home() {
         <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-2xl shadow-pink-700 text-center w-[90%] sm:w-auto">
           <div className="mb-4">
             <div className="flex justify-center">
-              <Image
-                src={haebom_princessImg}
-                alt="haebom princess"
-                className="w-1/2 h-auto rounded-xl mb-7"
-              />
+              <Link
+                href="https://ch.sooplive.co.kr/haebomhaebom"
+                className="w-1/2 h-auto mb-7"
+              >
+                <Image
+                  src={haebom_princessImg}
+                  alt="haebom princess"
+                  className="rounded-xl"
+                />
+              </Link>
             </div>
             <h1 className="text-lg sm:text-3xl">
               해봄월드에 오신 것을 환영합니다!!
