@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-10 sm:top-10 sm:h-full sm:mb-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-10 sm:top-20 sm:h-full sm:mb-0 -z-10">
           <Image
             src={princessImg}
             alt="Left Background"
@@ -50,14 +50,14 @@ export default function Home() {
                 해봄월드의 규칙
               </h2>
             </div>
-            <ul className="mt-10 space-y-8 sm:mt-14 sm:space-y-14">
-              <li>
+            <ul className="mt-10 space-y-5 sm:mt-14 sm:space-y-10 rounded-xl">
+              <li className="bg-white text-pink rounded-lg">
                 <Link href="/about">1. 해봄에 대해 알아보기</Link>
               </li>
-              <li>
+              <li className="bg-white text-pink rounded-lg">
                 <Link href="/shorts">2. 공주의 규칙 챌린지 정주행하기</Link>
               </li>
-              <li>
+              <li className="bg-white text-pink rounded-lg">
                 <Link href="/shorts2">3. 해봄의 다른 인기곡들 들어보기</Link>
               </li>
             </ul>
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* 오른쪽 이미지 (모바일에서는 아래로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 sm:absolute sm:right-10 sm:top-10 sm:h-full sm:mt-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 sm:absolute sm:right-10 sm:top-20 sm:h-full sm:mt-0 -z-10">
           <Image
             src={princess2Img}
             alt="Right Background"

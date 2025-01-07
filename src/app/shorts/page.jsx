@@ -20,7 +20,7 @@ const page = () => {
             />
           </div>
 
-          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32">
+          <div className="grid grid-rows-1 gap-y-5 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-28">
             <div className="flex justify-center video-container">
               <iframe
                 src="https://www.youtube.com/embed/PXUkoHROohI"
