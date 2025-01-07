@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Link from "next/link";
 import crownImg from "./image/crown.webp";
 import haebom_princessImg from "./image/haebom_princess.png";
+import princessImg from "./image/princess.png";
+import princess2Img from "./image/princess2.png"
 
 export default function Home() {
   return (
@@ -10,11 +12,11 @@ export default function Home() {
       <Navbar />
       <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-0 sm:top-0 sm:h-full sm:mb-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-10 sm:top-10 sm:h-full sm:mb-0 -z-10">
           <Image
-            src={crownImg}
+            src={princessImg}
             alt="Left Background"
-            className="w-1/4 sm:w-1/2 h-auto object-cover"
+            className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700"
           />
         </div>
 
@@ -58,11 +60,11 @@ export default function Home() {
         </div>
 
         {/* 오른쪽 이미지 (모바일에서는 아래로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 sm:absolute sm:right-0 sm:top-0 sm:h-full sm:mt-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 sm:absolute sm:right-10 sm:top-10 sm:h-full sm:mt-0 -z-10">
           <Image
-            src={crownImg}
+            src={princess2Img}
             alt="Right Background"
-            className="w-1/4 sm:w-3/4 h-auto object-cover"
+            className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700"
           />
         </div>
       </main>
