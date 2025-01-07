@@ -8,7 +8,7 @@ import lineImg from "../image/line.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row px-3 py-4 justify-around">
+    <nav className="flex flex-row px-3 py-2 justify-around">
       <Link href="/">
         <Image
           src={haebomImg}
