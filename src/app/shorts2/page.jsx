@@ -3,19 +3,23 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
-import kbImg from "../image/kb.webp";
+
+import emergencyImg from "../image/emergency.png";
+import pingImg from "../image/ping.png";
+import kbImg from "../image/landoflola.png";
+import pikminImg from "../image/pikmin.png";
 
 const page = () => {
   const shorts = [
     {
       link: "https://www.youtube.com/embed/Y3gMXelCVts",
       title: "비상사태!(이머전시 챌린지 Korean ver)",
-      img: kbImg,
+      img: emergencyImg,
     },
     {
       link: "https://www.youtube.com/embed/TQnsshOXenQ",
       title: "새콤달콤 캐치! 티니핑송",
-      img: kbImg,
+      img: pingImg,
     },
     {
       link: "https://www.youtube.com/embed/y_5jyi3woQ4",
@@ -25,7 +29,7 @@ const page = () => {
     {
       link: "https://www.youtube.com/embed/kVFUfcvQ-o0",
       title: "피크민송 by 해봄",
-      img: kbImg,
+      img: pikminImg,
     },
   ];
 
@@ -44,7 +48,7 @@ const page = () => {
       <main className="min-h-screen p-8 pb-20 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col items-center sm:items-start">
         <div className="p-4 md:p-8 mx-auto">
           <h1 className="text-xl lg:text-3xl text-center mb-14 lg:mb-24">
-            노래하는 해봄 인기송들
+            노래하는 해봄 인기송
           </h1>
 
           <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32">
@@ -52,7 +56,7 @@ const page = () => {
               <button
                 key={index}
                 onClick={() => handleModalOpen(video.link)}
-                className="relative w-64 h-36 rounded-md shadow-md transition transform hover:scale-105"
+                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-105"
               >
                 <Image
                   src={video.img}
