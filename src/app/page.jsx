@@ -5,6 +5,7 @@ import crownImg from "./image/crown.webp";
 import haebom_princessImg from "./image/haebom_princess.png";
 import princessImg from "./image/princess.png";
 import princess2Img from "./image/princess2.png";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -74,7 +75,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+      <Footer />
     </>
   );
 }

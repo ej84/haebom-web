@@ -8,6 +8,7 @@ import emergencyImg from "../image/emergency.png";
 import pingImg from "../image/ping.png";
 import kbImg from "../image/landoflola.png";
 import pikminImg from "../image/pikmin.png";
+import Footer from "../components/Footer";
 
 const page = () => {
   const shorts = [
@@ -93,6 +94,7 @@ const page = () => {
           )}
         </div>
       </main>
+      <Footer />
     </>
   );
 };

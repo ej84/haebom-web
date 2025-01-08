@@ -22,7 +22,7 @@ const Navbar = () => {
           alt="about haebom"
           className="w-14 h-14 md:w-28 md:h-28 rounded-xl"
         />
-        <p className="relative bottom-10 md:bottom-[78px] md:right-1">
+        <p className="relative bottom-10 md:bottom-[75px] md:right-1">
           해봄에 대하여
         </p>
       </Link>

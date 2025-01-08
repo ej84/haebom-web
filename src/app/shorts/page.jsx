@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import we_are_princess_img from "../image/we_are_princess.png";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 const page = () => {
   const shorts = [
@@ -86,6 +87,7 @@ const page = () => {
           )}
         </div>
       </main>
+      <Footer />
     </>
   );
 };
