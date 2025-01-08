@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen items-center justify-center relative font-[family-name:var(--font-geist-sans)]">
+      <main className="min-h-screen p-8 items-center justify-center relative font-[family-name:var(--font-geist-sans)]">
         <div className="flex justify-center">
           <Image src={haebomImg} alt="profile" className=" h-auto" />
         </div>
