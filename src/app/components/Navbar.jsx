@@ -23,7 +23,7 @@ const Navbar = () => {
           className="w-14 h-14 md:w-28 md:h-28 rounded-xl"
         />
         <p className="relative bottom-10 md:bottom-[78px] md:right-1">
-          Who is 해봄?
+          해봄에 대하여
         </p>
       </Link>
       <Link href="/shorts" className="text-xs md:text-lg">

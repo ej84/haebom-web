@@ -84,45 +84,6 @@ const page = () => {
               </div>
             </div>
           )}
-
-          {/*<div className="grid grid-rows-1 gap-y-5 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-28">
-            <div className="flex justify-center video-container">
-              <iframe
-                src="https://www.youtube.com/embed/PXUkoHROohI"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/eR2BCzmj_lg"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/ihWFX7iJq_A"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/sCKLO-bMyHQ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-          </div>*/}
         </div>
       </main>
     </>

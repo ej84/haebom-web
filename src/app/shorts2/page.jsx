@@ -91,45 +91,6 @@ const page = () => {
               </div>
             </div>
           )}
-
-          {/*<div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32">
-            <div className="flex justify-center video-container">
-              <iframe
-                src="https://www.youtube.com/embed/Y3gMXelCVts"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/TQnsshOXenQ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/y_5jyi3woQ4"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/kVFUfcvQ-o0"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="responsive-iframe rounded-xl"
-              ></iframe>
-            </div>
-          </div>*/}
         </div>
       </main>
     </>
