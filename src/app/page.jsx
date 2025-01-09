@@ -52,8 +52,10 @@ export default function Home() {
               </h2>
             </div>
             <ul className="mt-10 space-y-5 sm:mt-14 sm:space-y-10 rounded-xl">
-              <li className="bg-white text-pink rounded-lg">
-                <Link href="/about">1. 해봄에 대해 알아보기</Link>
+              <li className="bg-white text-pink rounded-lg w-full">
+                <Link href="/about" className="w-full">
+                  1. 해봄에 대해 알아보기
+                </Link>
               </li>
               <li className="bg-white text-pink rounded-lg">
                 <Link href="/shorts">2. 공주의 규칙 챌린지 정주행하기</Link>
