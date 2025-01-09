@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import we_are_princess_img from "../image/we_are_princess.png";
+import princess_rule_img from "../image/princess_rule.png";
 import Image from "next/image";
 import Footer from "../components/Footer";
 
@@ -10,19 +11,23 @@ const page = () => {
   const shorts = [
     {
       link: "https://www.youtube.com/embed/PXUkoHROohI",
-      title: "공주의 규칙 MV Shorts Ver",
+      title: "공주의 규칙 뮤비 Shorts Ver",
+      img: princess_rule_img,
     },
     {
       link: "https://www.youtube.com/embed/eR2BCzmj_lg",
-      title: "공주의 규칙 W/주둥이",
+      title: "주둥아 공주는 화내면 안돼~💖",
+      img: princess_rule_img,
     },
     {
       link: "https://www.youtube.com/embed/ihWFX7iJq_A",
-      title: "공주의 규칙 W/쿠빈",
+      title: "쿠빈공주. 내가 지켜볼거야.",
+      img: princess_rule_img,
     },
     {
       link: "https://www.youtube.com/embed/sCKLO-bMyHQ",
-      title: "공주의 규칙 W/케인",
+      title: "케인공주 방송켜. W/케인",
+      img: princess_rule_img,
     },
   ];
 
@@ -57,9 +62,16 @@ const page = () => {
               <button
                 key={index}
                 onClick={() => handleModalOpen(video.link)}
-                className="w-[240px] h-[140px] text-pink rounded-md hover:bg-pink border transition duration-300 shadow-2xl shadow-pink-700"
+                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-105"
               >
-                {video.title}
+                <Image
+                  src={video.img}
+                  alt={video.title}
+                  className="w-full h-full rounded-xl"
+                />
+                <span className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-lg font-semibold rounded-xl">
+                  {video.title}
+                </span>
               </button>
             ))}
           </div>
