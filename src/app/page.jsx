@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 sm:absolute sm:left-10 sm:top-20 sm:h-full sm:mb-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 md:absolute md:left-10 md:top-20 md:h-full sm:mb-0">
           <Image
             src={princessImg}
             alt="Left Background"
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         {/* 메인 콘텐츠 */}
-        <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-2xl shadow-pink-700 text-center w-[90%] sm:w-auto">
+        <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-2xl shadow-pink-700 text-center w-[90%] md:w-auto">
           <div className="mb-4">
             <div className="flex justify-center">
               <Link
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         {/* 오른쪽 이미지 (모바일에서는 아래로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 sm:absolute sm:right-10 sm:top-20 sm:h-full sm:mt-0 -z-10">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 md:absolute md:right-10 md:top-20 md:h-full md:mt-0">
           <Image
             src={princess2Img}
             alt="Right Background"

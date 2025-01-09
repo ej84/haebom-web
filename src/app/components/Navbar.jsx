@@ -9,7 +9,7 @@ import lineImg from "../image/line.png";
 const Navbar = () => {
   return (
     <nav className="flex flex-row px-3 py-2 justify-around">
-      <Link href="/">
+      <Link href="/" className="z-50">
         <Image
           src={haebomImg}
           alt="haebom Profile"
@@ -36,7 +36,7 @@ const Navbar = () => {
           공주의 규칙 챌린지
         </p>
       </Link>
-      <Link href="/shorts2" className="text-xs md:text-lg">
+      <Link href="/shorts2" className="text-xs md:text-lg z-50">
         <Image
           src={lineImg}
           alt="haebom's other songs"
@@ -46,23 +46,6 @@ const Navbar = () => {
           해봄의 다른 인기곡들
         </p>
       </Link>
-      {/*<Link
-        href="https://www.youtube.com/channel/UCL9oC0YZRwuyudZqUrgKw9w"
-        className="p-3"
-      >
-        <FaYoutubeSquare className="w-14 h-14 md:w-16 md:h-16" />
-        <p className="text-center text-sm">봄튜브</p>
-      </Link>
-
-      <Link href="https://www.instagram.com/haebom_m/" className="p-3">
-        <FaInstagramSquare className="w-14 h-14 md:w-16 md:h-16" />
-        <p className="text-center text-sm">봄스타그램</p>
-      </Link>
-
-      <Link href="https://www.tiktok.com/@haebom_?lang=ko-KR" className="p-3">
-        <AiFillTikTok className="w-14 h-14 md:w-16 md:h-16" />
-        <p className="text-center text-sm">봄틱톡</p>
-      </Link>*/}
     </nav>
   );
 };
