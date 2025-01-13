@@ -57,7 +57,7 @@ const page = () => {
               <button
                 key={index}
                 onClick={() => handleModalOpen(video.link)}
-                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-105"
+                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-110"
               >
                 <Image
                   src={video.img}

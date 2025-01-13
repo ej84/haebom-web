@@ -41,7 +41,7 @@ export default function Home() {
                 <Image
                   src={haebom_princessImg}
                   alt="haebom princess"
-                  className="rounded-xl"
+                  className="rounded-xl transition transform hover:scale-110"
                 />
               </Link>
             </div>

@@ -6,6 +6,7 @@ import we_are_princess_img from "../image/we_are_princess.png";
 import princess_rule_img from "../image/princess_rule.png";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import princess_stickImg from "../image/princess_stick.webp";
 
 const page = () => {
   const shorts = [
@@ -44,12 +45,20 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen p-8 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col items-center sm:items-start">
+      <main className="flex justify-center min-h-screen p-8 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] items-center sm:items-start">
         <div className="p-4 md:p-8 mx-auto">
-          <h1 className="text-xl lg:text-3xl text-center mb-10">
-            공주의 규칙 베스트 모음
-          </h1>
-          <div className="flex justify-center mb-14">
+          <div className="flex justify-center items-center rounded-lg w-full max-w-md mx-auto shadow-md bg-white">
+            <Image
+              src={princess_stickImg}
+              alt="princess stick"
+              className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg relative right-5 md:right-[90px] lg:right-10"
+            />
+            <h1 className="text-xl lg:text-3xl text-pink">
+              공주의 규칙 챌린지 모음
+            </h1>
+          </div>
+
+          <div className="flex justify-center my-10">
             <Image
               src={we_are_princess_img}
               alt="we are princess"
@@ -62,7 +71,7 @@ const page = () => {
               <button
                 key={index}
                 onClick={() => handleModalOpen(video.link)}
-                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-105"
+                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-110"
               >
                 <Image
                   src={video.img}
