@@ -3,22 +3,31 @@ import Navbar from "./components/Navbar";
 import Link from "next/link";
 import crownImg from "./image/crown.webp";
 import haebom_princessImg from "./image/haebom_princess.png";
-import princessImg from "./image/princess.png";
-import princess2Img from "./image/princess2.png";
+import princessleft1Img from "./image/princess_left1.png";
+import princessleft2Img from "./image/princess_left2.png";
+import princessright1Img from "./image/princess_right1.png";
+import princessright2Img from "./image/princess_right2.png";
 import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
+      <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)] lg:mb-5">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
         <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 md:absolute md:left-10 md:top-20 md:h-full sm:mb-0">
-          <Image
-            src={princessImg}
-            alt="Left Background"
-            className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700"
-          />
+          <div className="slideshow">
+            <Image
+              src={princessleft1Img}
+              alt="Left Background"
+              className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700 object-contain"
+            />
+            <Image
+              src={princessleft2Img}
+              alt="Left Background 2"
+              className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700 object-contain"
+            />
+          </div>
         </div>
 
         {/* 메인 콘텐츠 */}
@@ -40,7 +49,7 @@ export default function Home() {
               해봄월드에 오신 것을 환영합니다!!
             </h1>
           </div>
-          <div className="p-4 mx-auto md:mb-14">
+          <div className="p-4 mx-auto md:mb-5">
             <div className="flex bg-white rounded-lg px-4 sm:px-5 shadow-md items-center">
               <Image
                 src={crownImg}
@@ -69,11 +78,18 @@ export default function Home() {
 
         {/* 오른쪽 이미지 (모바일에서는 아래로 이동) */}
         <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 md:absolute md:right-10 md:top-20 md:h-full md:mt-0">
-          <Image
-            src={princess2Img}
-            alt="Right Background"
-            className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700"
-          />
+          <div className="slideshow">
+            <Image
+              src={princessright1Img}
+              alt="Right Background"
+              className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700 object-contain"
+            />
+            <Image
+              src={princessright2Img}
+              alt="Right Background 2"
+              className="w-2/4 sm:w-full h-auto rounded-xl shadow-xl shadow-pink-700 object-contain"
+            />
+          </div>
         </div>
       </main>
 
