@@ -51,7 +51,7 @@ const page = () => {
             <Image
               src={princess_stickImg}
               alt="princess stick"
-              className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg relative right-8 md:right-[90px] lg:right-10"
+              className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg relative right-9 md:right-[90px] lg:right-10"
             />
             <h1 className="text-xl lg:text-3xl text-pink">
               공주의 규칙 챌린지 모음

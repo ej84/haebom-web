@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import Image from "next/image";
+import { FaPlay, FaPause } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import Link from "next/link";
 import crownImg from "./image/crown.webp";
@@ -12,7 +13,6 @@ import princessright2Img from "./image/princess_right2.png";
 import Footer from "./components/Footer";
 
 export default function Home() {
-
   const [isPlaying, setIsPlaying] = useState(false); // 재생 상태 관리
   const audioRef = useRef(null); // 오디오 엘리먼트 참조
 
@@ -91,14 +91,20 @@ export default function Home() {
                 <Link href="/shorts">2. 공주의 규칙 챌린지 정주행하기</Link>
               </li>
               <li className="bg-white text-pink rounded-lg">
-                <Link href="/shorts2">3. 해봄의 다른 인기곡들 들어보기</Link>
+                <Link href="/shorts2">3. 해봄의 다른 인기곡들 들으러 가기</Link>
               </li>
             </ul>
-            <div className="px-4 rounded-xl shadow-lg shadow-pink-700 mt-8">
+            <div className="flex justify-center items-center px-4 py-4 rounded-xl shadow-lg shadow-pink-700 mt-8">
               <audio ref={audioRef} src="/audio/princess_rule.mp3" loop />
-              <button onClick={togglePlay} className="w-10 h-10">
-                {isPlaying ? "정지" : "재생"}
+
+              <button onClick={togglePlay} className="relative right-4">
+                {isPlaying ? (
+                  <FaPause className="w-8 h-8" />
+                ) : (
+                  <FaPlay className="w-8 h-8" />
+                )}
               </button>
+              <p className="text-base text-center">공주의 규칙 들어보기</p>
             </div>
           </div>
         </div>

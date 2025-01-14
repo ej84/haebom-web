@@ -19,7 +19,7 @@ const page = () => {
         <div className="grid grid-rows-1 p-5 gap-4 mt-10 justify-center items-center text-center text-sm lg:text-base shadow-xl shadow-pink-600">
           <h1>이름: 해봄</h1>
           <h2>직업: 음악 유튜버 겸 스트리머</h2>
-          <p>방송 경력: 2018년 9월 10일 + 2313일째</p>
+          <p>방송 경력: 2018년 9월 10일 ~ 현재</p>
           <p>심볼 컬러: 핑크</p>
           <p>팬덤 이름: 달봄이</p>
           <p>
