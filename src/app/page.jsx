@@ -96,14 +96,15 @@ export default function Home() {
             </ul>
             <div className="flex justify-center items-center px-4 py-4 rounded-xl shadow-lg shadow-pink-700 mt-8">
               <audio ref={audioRef} src="/audio/princess_rule.mp3" loop />
-
-              <button onClick={togglePlay} className="relative right-4">
-                {isPlaying ? (
-                  <FaPause className="w-8 h-8" />
-                ) : (
-                  <FaPlay className="w-8 h-8" />
-                )}
-              </button>
+              <div className="flex justify-center items-center outline outline-2 rounded-full w-12 h-12 outline-white relative right-5">
+                <button onClick={togglePlay}>
+                  {isPlaying ? (
+                    <FaPause className="w-8 h-8" />
+                  ) : (
+                    <FaPlay className="w-8 h-8 ml-1" />
+                  )}
+                </button>
+              </div>
               <p className="text-base text-center">공주의 규칙 들어보기</p>
             </div>
           </div>
