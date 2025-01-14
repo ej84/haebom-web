@@ -1,3 +1,5 @@
+"use client";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Link from "next/link";
@@ -10,12 +12,31 @@ import princessright2Img from "./image/princess_right2.png";
 import Footer from "./components/Footer";
 
 export default function Home() {
+
+  const [isPlaying, setIsPlaying] = useState(false); // 재생 상태 관리
+  const audioRef = useRef(null); // 오디오 엘리먼트 참조
+
+  // 재생/정지 버튼 핸들러
+  const togglePlay = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play().catch((err) => {
+          console.error("Failed to auto play:", err);
+        });
+      }
+      setIsPlaying(!isPlaying); // 상태 반전
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main className="min-h-screen flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)] lg:mb-5">
         {/* 왼쪽 이미지 (모바일에서는 위로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 md:absolute md:left-10 md:top-20 md:h-full sm:mb-0">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mb-4 md:absolute md:left-10 md:top-20 lg:top-28 md:h-full sm:mb-0">
           <div className="slideshow">
             <Image
               src={princessleft1Img}
@@ -73,11 +94,17 @@ export default function Home() {
                 <Link href="/shorts2">3. 해봄의 다른 인기곡들 들어보기</Link>
               </li>
             </ul>
+            <div className="px-4 rounded-xl shadow-lg shadow-pink-700 mt-8">
+              <audio ref={audioRef} src="/audio/princess_rule.mp3" loop />
+              <button onClick={togglePlay} className="w-10 h-10">
+                {isPlaying ? "정지" : "재생"}
+              </button>
+            </div>
           </div>
         </div>
 
         {/* 오른쪽 이미지 (모바일에서는 아래로 이동) */}
-        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 md:absolute md:right-10 md:top-20 md:h-full md:mt-0">
+        <div className="w-full sm:w-1/4 h-auto flex items-center justify-center mt-4 md:absolute md:right-10 md:top-20 lg:top-28 md:h-full md:mt-0">
           <div className="slideshow">
             <Image
               src={princessright1Img}
