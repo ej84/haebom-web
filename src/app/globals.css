@@ -56,7 +56,21 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0; /* 초기 상태: 투명 */
-  animation: fade 4s infinite; /* 총 3초 */
+  animation: fade 4s infinite; /* 총 4초 */
+}
+
+.hide_show {
+  position: absolute; /* relative를 기준으로 배치 */
+  top: 105px; /* 위치 조정 */
+  left: 40px;
+  visibility: hidden; /* 기본값: 숨김 */
+  opacity: 0; /* 투명도 */
+  transition: visibility 0s, opacity 0.3s ease-in-out; /* 애니메이션 효과 */
+}
+
+.group:hover .hide_show {
+  visibility: visible; /* 그룹에 hover 시 보이도록 */
+  opacity: 1; /* 투명도 변경 */
 }
 
 /* 각 이미지의 애니메이션 딜레이 설정 */
@@ -78,6 +92,48 @@ body {
   }
 }
 
+#heart {
+  position: relative;
+  width: 90px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  animation: change 3s infinite;
+}
+
+#heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes change {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
 .responsive-iframe {
   width: 100%;
   height: 315px; /* 기본 높이 */
@@ -96,5 +152,11 @@ body {
 @media (max-width: 767px) {
   .responsive-iframe {
     height: 200px; /* 모바일에서 높이 감소 */
+  }
+
+  .hide_show {
+    top: 55px;
+    left: 22px;
+    font-size: small;
   }
 }

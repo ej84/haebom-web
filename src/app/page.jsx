@@ -57,13 +57,16 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="https://ch.sooplive.co.kr/haebomhaebom"
-                className="w-1/2 h-auto mb-7"
+                className="w-1/2 h-auto mb-7 relative group"
               >
                 <Image
                   src={haebom_princessImg}
                   alt="haebom princess"
                   className="rounded-xl transition transform hover:scale-110"
                 />
+                <span className="hide_show right-2 sm:right-10 text-pink rounded-xl">
+                  해봄 SOOP 채널 바로가기
+                </span>
               </Link>
             </div>
             <h1 className="text-lg sm:text-3xl">
