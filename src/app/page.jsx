@@ -54,7 +54,7 @@ export default function Home() {
         {/* 메인 콘텐츠 */}
         <div className="p-6 sm:p-8 gap-6 sm:gap-16 rounded-lg shadow-2xl shadow-pink-700 text-center w-[90%] md:w-auto">
           <div className="mb-4">
-            <div className="flex justify-center">
+            <div className="flex justify-center fade-in">
               <Link
                 href="https://ch.sooplive.co.kr/haebomhaebom"
                 className="w-1/2 h-auto mb-7 relative group"
@@ -69,11 +69,11 @@ export default function Home() {
                 </span>
               </Link>
             </div>
-            <h1 className="text-lg sm:text-3xl">
+            <h1 className="text-lg sm:text-3xl fade-in_2">
               해봄월드에 오신 것을 환영합니다!!
             </h1>
           </div>
-          <div className="p-4 mx-auto md:mb-5">
+          <div className="p-4 mx-auto md:mb-5 fade-in_2">
             <div className="flex bg-white rounded-lg px-4 sm:px-5 shadow-md items-center">
               <Image
                 src={crownImg}

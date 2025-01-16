@@ -81,6 +81,16 @@ body {
   animation-delay: 2s; /* 두 번째 이미지 1.5초 후 시작 */
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fade-in_2 {
+  opacity: 0;
+  animation: fadeIn 3.5s ease-in-out forwards;
+}
+
 /* 페이드 인/아웃 애니메이션 */
 @keyframes fade {
   0%,
@@ -89,6 +99,15 @@ body {
   }
   50% {
     opacity: 1; /* 중간에서는 보임 */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
