@@ -101,6 +101,9 @@ const page = () => {
               </div>
             </div>
           )}
+          <h2 className="text-sm lg:text-xl text-pink text-center rounded-xl mt-20 p-3">
+            ⬇ 봄튜브&틱톡에서 더 많은 노래를 들어보세요! ⬇
+          </h2>
         </div>
       </main>
       <Footer />

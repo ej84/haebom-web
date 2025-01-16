@@ -64,7 +64,7 @@ export default function Home() {
                   alt="haebom princess"
                   className="rounded-xl transition transform hover:scale-110"
                 />
-                <span className="hide_show right-2 sm:right-10 text-pink rounded-xl">
+                <span className="hide_show right-2 sm:right-10 text-pink rounded-xl p-3">
                   해봄 SOOP 채널 바로가기
                 </span>
               </Link>
@@ -91,7 +91,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className="bg-white text-pink rounded-lg">
-                <Link href="/shorts">2. 공주의 규칙 챌린지 정주행하기</Link>
+                <Link href="/shorts">2. 공주의 규칙 챌린지 모음 보기</Link>
               </li>
               <li className="bg-white text-pink rounded-lg">
                 <Link href="/shorts2">3. 해봄의 다른 인기곡들 들으러 가기</Link>
