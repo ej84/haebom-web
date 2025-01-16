@@ -8,6 +8,7 @@ import emergencyImg from "../image/emergency.png";
 import pingImg from "../image/ping.png";
 import kbImg from "../image/landoflola.png";
 import pikminImg from "../image/pikmin.png";
+import singing_haebomImg from "../image/singing_haebom.jpg";
 import Footer from "../components/Footer";
 
 const page = () => {
@@ -48,16 +49,24 @@ const page = () => {
       <Navbar />
       <main className="min-h-screen p-8 pb-20 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] flex flex-col items-center sm:items-start">
         <div className="p-4 md:p-8 mx-auto">
-          <h1 className="text-xl lg:text-3xl text-center mb-14 lg:mb-24 text-pink rounded-xl">
+          <h1 className="text-xl lg:text-3xl text-center mb-14 lg:mb-10 text-pink rounded-xl">
             노래하는 해봄의 인기송
           </h1>
 
-          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32">
+          <div className="flex justify-center my-10">
+            <Image
+              src={singing_haebomImg}
+              alt="singing haebom"
+              className="w-full lg:2/4 h-auto rounded-xl"
+            />
+          </div>
+
+          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-10 md:gap-28">
             {shorts.map((video, index) => (
               <button
                 key={index}
                 onClick={() => handleModalOpen(video.link)}
-                className="relative w-56 h-44 rounded-md shadow-md transition transform hover:scale-110"
+                className="relative w-56 md:w-48 h-44 md:h-40 rounded-md shadow-md transition transform hover:scale-110"
               >
                 <Image
                   src={video.img}
