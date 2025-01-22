@@ -45,7 +45,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="flex justify-center min-h-screen p-8 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-20 font-[family-name:var(--font-geist-sans)] items-center sm:items-start">
+      <main className="flex justify-center min-h-screen p-8 gap-16 relative bottom-10 md:bottom-20 lg:bottom-16 sm:p-14 font-[family-name:var(--font-geist-sans)] items-center sm:items-start">
         <div className="p-4 md:p-8 mx-auto">
           <div className="flex justify-center items-center rounded-lg w-full max-w-md mx-auto shadow-md bg-white">
             <Image
@@ -58,7 +58,7 @@ const page = () => {
             </h1>
           </div>
 
-          <div className="flex justify-center my-10">
+          <div className="flex justify-center my-10 md:mt-20">
             <Image
               src={we_are_princess_img}
               alt="we are princess"
@@ -66,7 +66,7 @@ const page = () => {
             />
           </div>
 
-          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32">
+          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-5 md:gap-32 relative top-10 md:top-14">
             {shorts.map((video, index) => (
               <button
                 key={index}

@@ -61,7 +61,7 @@ const page = () => {
             />
           </div>
 
-          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-10 md:gap-28">
+          <div className="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-y-7 md:gap-y-10 md:gap-28 md:mt-24">
             {shorts.map((video, index) => (
               <button
                 key={index}
@@ -101,7 +101,7 @@ const page = () => {
               </div>
             </div>
           )}
-          <h2 className="text-sm lg:text-xl text-pink text-center rounded-xl mt-20 p-3">
+          <h2 className="text-sm lg:text-xl text-pink text-center rounded-xl relative top-20 md:top-24 p-3">
             ⬇ 봄튜브&틱톡에서 더 많은 노래를 들어보세요! ⬇
           </h2>
         </div>
